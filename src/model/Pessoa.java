@@ -1,0 +1,45 @@
+package model;
+
+public class Pessoa {
+    private String nome;
+    private String cpf;
+    private int idade;
+
+    //Construtor - organizar
+    public Pessoa (String nome, String cpf, int idade) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.idade = idade;
+    }
+
+    //Getter (ler) e Setter (adicionar)
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void exibirDados() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("CPF: " + getCpf());
+        System.out.println("Idade: " + getIdade());
+    }
+}
